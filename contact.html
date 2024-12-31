@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css"> 
+</head>
+<body>
+    <nav class="header">      
+        <ul>
+            <li><a class="page" href="index.html">Home</a></li>
+            <li><a class="page" href="destination.html">Destination</a></li>
+            <li><a class="page" href="package.html">Package</a></li>
+            <li><a class="page" href="contact.html">Contact</a></li> 
+        </ul>    
+    </nav>
+
+    <section class="one">
+
+        <div class="image">
+            <h1>Contact us</h1>
+            <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+            <a href="book.html"> <!-- connect to booking page with the help of button-->
+              <button type="booking">Book now</button>
+            </a>
+        </div>      
+    </section>
+
+    <section class="two">
+        <div>
+            <h1>Contact Agency</h1>
+            <p>"At Travel India, we are passionate about crafting unforgettable travel experiences tailored just for you. Whether you need assistance in planning your journey, have questions about our packages, or simply want to learn more about what we offer, we're just a message away. Reach out to us today and let's start planning your perfect getaway!"</p>
+        </div>
+
+        <div>
+            <h1>Our Contact</h1>
+            <p><strong>Address:</strong> 123 Main Street, City Name, State, ZIP Code</p>
+            <p><strong>Email:</strong> info@travelindia.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+        </div>
+
+        <div>
+            <h1>Any Questions?</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone No:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+         
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Explore the diverse beauty of India with our travel guides, tips, and local insights. From the majestic Himalayas to serene beaches, we’ve got you covered.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="package.html">package</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@indiatravel.com</p>
+                <p>Phone: +91 123 456 7890</p>
+                <p>Address: 123 Travel India, Raipur, Chhattisgarh, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 India Travel | All Rights Reserved.</p>
+        </div>
+    </footer>
+    </body>
+    </html>

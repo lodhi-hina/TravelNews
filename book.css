@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-photo/vertical-shot-foamy-waves-coming-sandy-beach-beautiful-blue-sky_181624-7667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.booking-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid pink;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.booking-header h1 {
+    margin: 0;
+    font-size:30px;
+    color: white;
+}
+
+.close-btn {
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: 	white;
+    background-color: blue;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;border-radius: 8px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 92%;
+    padding: 15px;
+    border: 1px solid #090101;
+    border-radius: 8px;
+    font-size: 16px;
+    
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: rgb(216, 201, 28);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .booking-header h1 {
+        font-size: 20px;
+    }
+
+    .form-section h2 {
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-container {
+        padding: 20px;
+    }
+
+    .booking-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .close-btn {
+        font-size: 20px;
+    }
+
+}

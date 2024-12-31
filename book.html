@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel India - Book Your Journey</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <button class="close-btn" onclick="window.location.href='contact.html'">Back</button>
+    <div class="booking-container">
+        <div class="booking-header">
+            <h1>Book Your Travel Experience with Travel India</h1>
+        </div>
+
+        <form class="booking-form">
+            <!-- Personal Information Section -->
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+                </div>
+            </section>
+
+            <!-- Travel Details Section -->
+            <section class="form-section">
+                <h2>Travel Details</h2>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Where do you want to go?" required>
+                </div>
+                <div class="form-group">
+                    <label for="travel-dates">Travel Dates:</label>
+                    <input type="date" id="travel-start" name="travel-start" required>
+
+                       <h4>To</h4>
+
+                    <input type="date" id="travel-end" name="travel-end" required>
+                </div>
+                <div class="form-group">
+                    <label for="num-travelers">Number of Travelers:</label>
+                    <input type="number" id="num-travelers" name="num-travelers" min="1" max="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="travel-type">Travel Type:</label>
+                    <select id="travel-type" name="travel-type" required>
+                        <option value="leisure">Leisure</option>
+                        <option value="business">Business</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="honeymoon">Honeymoon</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Accommodation Section -->
+            <section class="form-section">
+                <h2>Accommodation</h2>
+                <div class="form-group">
+                    <label for="accommodation">Type of Accommodation:</label>
+                    <select id="accommodation" name="accommodation" required>
+                        <option value="hotel">Hotel</option>
+                        <option value="resort">Resort</option>
+                        <option value="villa">Villa</option>
+                        <option value="apartment">Apartment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" placeholder="Any special requests?" rows="4"></textarea>
+                </div>
+            </section>
+
+            <!-- Transportation Section -->
+            <section class="form-section">
+                <h2>Transportation</h2>
+                <div class="form-group">
+                    <label for="transportation">Preferred Mode of Transportation:</label>
+                    <select id="transportation" name="transportation" required>
+                        <option value="flight">Flight</option>
+                        <option value="train">Train</option>
+                        <option value="bus">Bus</option>
+                        <option value="car">Car</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="car-rental">Do you need a car rental?</label>
+                    <select id="car-rental" name="car-rental" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Payment Information Section -->
+            <section class="form-section">
+                <h2>Payment Information</h2>
+                <div class="form-group">
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Enter the name on your card" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-expiry">Expiry Date:</label>
+                    <input type="month" id="card-expiry" name="card-expiry" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-cvv">CVV:</label>
+                    <input type="text" id="card-cvv" name="card-cvv" placeholder="Enter the CVV" required>
+                </div>
+                <div class="form-group">
+                    <label for="billing-address">Billing Address:</label>
+                    <textarea id="billing-address" name="billing-address" placeholder="Enter your billing address" rows="3" required></textarea>
+                </div>
+            </section>
+
+            <!-- Terms and Conditions Section -->
+            <section class="condition">
+                <h2>Terms and Conditions</h2>
+                <div class="form-group terms-group">
+                    <input  id="terms" name="terms" required>
+                    <label type="checkbox" for="terms">I agree to the <a href="#">terms and conditions</a></label> 
+                </div>
+            </section>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Booking</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
